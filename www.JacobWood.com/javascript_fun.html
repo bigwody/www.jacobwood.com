@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <script src="scripts/jquery-1.11.3.min.js"></script>
+    <script src="scripts/PasswordScript.js"></script>    
+    <script src="scripts/RainbowBackground.js"></script>
+    <script src="scripts/RainbowText.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/myStyle.css">
+    <title>Javascript Fun</title>
+  </head>
+<body bgcolor="#000000" text="white" onLoad="JSFX_StartEffects()">
+  <div>
+    <table>
+      <tr width="100%">
+        <td height="120">
+          <h1 id="titleHeader">Javascript</h1>
+        </td>
+      </tr>
+      <tr width="100%">
+        <td valign="top" width="33%">
+          <h1>Basics</h1>
+          <p />
+          <button onclick="starteffect()">Change Font Color</button>&nbsp;
+          <button onclick="changeFontSize()">Change Title Size</button>&nbsp;       
+          <button onclick="ToggleBackgroundOnOff()">Toggle Background</button>&nbsp;
+          <p />
+          <a>Click the image to change it.</a>
+          <p />
+          <img id="myImage" onclick="changeImage()" src="images/2.jpg" height="200">
+          <p />
+        </td>
+        <td valign="top" width="33%">
+          <h1>Validation Example</h1>
+          <p />
+          <p>Please input a number between 1 and 10:</p>
+
+          <input id="inputNumber">
+          <button type="button" onclick="ValidateNumberBetween1And10()">Submit</button>
+          <p id="errorMessage"></p>
+        </td>
+        <td valign="top" width="33%"></td>
+      </tr>
+      <tr>
+        <td valign="top" width="33%"></td>
+        <td width="33%"></td>
+        <td width="33%"></td>
+      </tr>
+    </table>
+  </div>
+  <p>
+    <h1><a style="color:lime" href="Home.html">Home</a></h1>
+  </p>
+</body>
+</html>
+<script>
+  //javascript arrays    
+  var sizes = ["25px", "15px", "40px", "35px", "30px"];
+  var images = ["images/meonball_small.jpg","images/2.jpg","images/wody.jpg"];
+  var sizeIndex = 0;
+  var imageIndex = 2;
+
+  var speed = 50 // SPEED OF FADE
+
+  var hex = new Array("00", "14", "28", "3C", "50", "64", "78", "8C", "A0", "B4", "C8", "DC", "F0")
+  var r = 1
+  var g = 1
+  var b = 1
+  var seq = 1
+
+
+  function changeImage() {
+    document.getElementById('myImage').src = images[imageIndex];
+    //if we wanted to change every image on the page
+    //var elems = document.body.getElementsByTagName("img");
+    //for (var i = 0; i < elems.length; i++) {
+    //  elems[i].src = images[imageIndex];
+    //}
+    imageIndex++;
+    if (imageIndex == 3) {
+      imageIndex = 0;
+    }
+  }
+
+  function changeFontSize() {
+    //single element
+    document.getElementById('titleHeader').style.fontSize = sizes[sizeIndex];
+    //increment/check counter
+    sizeIndex++;
+    if (sizeIndex == 5) {
+      sizeIndex = 0;
+    }
+  }
+
+  function ValidateNumberBetween1And10() {
+    // Get the value of the input field with id="numb"
+    var x = document.getElementById("inputNumber").value;
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+      document.getElementById("errorMessage").innerHTML  = "Input not valid";
+    } else {
+      document.getElementById("errorMessage").innerHTML  = "Input OK";
+    }
+  }
+
+</script>

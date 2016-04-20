@@ -1,0 +1,43 @@
+﻿body {
+}
+
+header {
+  text-align: center;
+  background: url("../images/fractal_bg.jpg");
+  background-size: cover;
+  color: white;
+}
+h1{
+ font-size: 70px; 
+}
+ul {
+  padding: 10px;
+  background: rgba(0,0,0,0.5); 
+}
+
+img {
+  margin: 40px 0px 0px 0px; 
+}
+
+li {
+  display: inline;
+  /*top right bottom left*/
+  padding: 0px 10px 0px 10px;
+}
+
+a {
+ color: white; 
+}
+
+@media (max-width: 500px) {
+    h1 {
+      font-size:36px;
+    }
+    li {
+      display:block;
+      padding: 5px;
+    }
+    img {
+      height:150px;
+    }
+  }

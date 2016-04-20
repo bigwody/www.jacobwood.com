@@ -1,0 +1,31 @@
+﻿    body {
+      text-align:center;
+      background: black;
+      color:green;
+      font-family:helvetica;
+    }
+    .home {
+      text-align:center;
+      background: url("../images/fractal_bg.jpg");
+      background-size: cover;
+      background-position: center;
+      color:green;
+      font-family:helvetica;
+    }
+    button {
+      color: green;
+      font-family:helvetica;
+      font-size:large;
+    }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0px;
+      padding: 2px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background:darkblue;
+      color:white
+    }
