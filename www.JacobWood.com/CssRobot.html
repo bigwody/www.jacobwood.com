@@ -85,6 +85,17 @@
       z-index: -1;
     }
 
+    .wave {
+      transform: scaleY(-1) rotate(200deg);
+      -webkit-transform: scaleY(-1) rotate(200deg);
+      -moz-transform: scaleY(-1) rotate(200deg);
+      position: relative;
+      top: -520px;
+      left: -190px;
+      z-index: -1;
+      color: #666;
+    }
+
     .right {
       font-family: 'Poller One', verdana, arial, sans-serif;
       font-weight: bold;
@@ -140,7 +151,7 @@
   </style>
 </head>
 
-<body>
+<body bgcolor="Blue">
 
   <div class="robot">
     <div class="beep"></div>
@@ -155,6 +166,7 @@
   <button class="flash">laser eyes on/off</button>
   <button class="color">change color!</button>
   <button class="moves">toggle dancing</button>
+  <button class="wavebutton">wave</button>
 
   <img class="theimage" src="images/jacob.png" height=50>
 
@@ -187,5 +199,9 @@
     //toggle dancing
     $(".moves").click(function () {
       $("img").toggle();
+    });
+
+    $(".wavebutton").click(function () {
+      $(".left").toggleClass('wave');
     });
 </script>
