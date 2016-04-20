@@ -103,10 +103,12 @@
     <Content Include="BootStrapTest.html" />
     <Content Include="ColorChangingTextV2.html" />
     <Content Include="CookieTest.html" />
+    <Content Include="CssRobot.html" />
     <Content Include="Home.html" />
     <Content Include="HomeV2.html" />
     <Content Include="images\fractal.jpg" />
     <Content Include="images\fractal_bg.jpg" />
+    <Content Include="images\jacob.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\logo2.png" />
     <Content Include="oldscripts\RainbowBackground.js" />
