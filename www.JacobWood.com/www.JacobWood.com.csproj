@@ -134,6 +134,7 @@
     <Content Include="javascript_fun.html" />
     <Content Include="scripts\jquery-1.11.3.min.js" />
     <Content Include="oldscripts\oldPasswordScript.js" />
+    <Content Include="scripts\jQueryMask.js" />
     <Content Include="scripts\PasswordScript.js" />
     <Content Include="scripts\RainbowBackground.js" />
     <Content Include="scripts\RainbowText.js" />

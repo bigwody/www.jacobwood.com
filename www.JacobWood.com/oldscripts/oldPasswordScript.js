@@ -5,7 +5,7 @@
 function checkIt() {
 
   var p = 1;
-  var t = prompt('Please Enter Your Password', ' ');
+  var t = $('.password').val();
   var e = "rd";
   var a = "pa";
   var cb = "ss";
@@ -29,7 +29,7 @@ function checkIt() {
     }
     p += 1;
     var t =
-    prompt('Access Denied - Password Incorrect, Please Try Again.', 'Password');
+    alert('Access Denied - Password Incorrect, Please Try Again.');
   }
   if (t.toLowerCase() != "password" & p == 3)
     window.location.href = 'http://www.google.com';
