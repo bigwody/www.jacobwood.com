@@ -111,6 +111,7 @@
     <Content Include="images\jacob.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\logo2.png" />
+    <Content Include="MadLibs.html" />
     <Content Include="oldscripts\RainbowBackground.js" />
     <Content Include="oldscripts\RainbowText.js" />
     <Content Include="oldscripts\RainbowTextSlidingV2.js" />
