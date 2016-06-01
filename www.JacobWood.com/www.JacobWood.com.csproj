@@ -102,6 +102,7 @@
     <Content Include="ColorChangingbackground.html" />
     <Content Include="BootStrapTest.html" />
     <Content Include="ColorChangingTextV2.html" />
+    <Content Include="ContactInfoService.svc" />
     <Content Include="CookieTest.html" />
     <Content Include="CssRobot.html" />
     <Content Include="Home.html" />
@@ -118,6 +119,11 @@
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses11.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -144,6 +150,7 @@
     <Content Include="scripts\RainbowTextSlidingV2.js" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="ServiceCallExample.html" />
     <Content Include="StarField.html" />
     <Content Include="style\animation.css" />
     <Content Include="style\myStyle.css" />
@@ -151,12 +158,26 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContactInfoService.svc.cs">
+      <DependentUpon>ContactInfoService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.cs" />
+    <Compile Include="DataClasses1.designer.cs" />
+    <Compile Include="DataClasses11.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
