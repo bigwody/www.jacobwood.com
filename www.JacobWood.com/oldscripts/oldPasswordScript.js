@@ -28,7 +28,7 @@ function checkIt() {
       break;
     }
     p += 1;
-    var t =
+    
     alert('Access Denied - Password Incorrect, Please Try Again.');
   }
   if (t.toLowerCase() != "password" & p == 3)

@@ -105,6 +105,10 @@
     <Content Include="ContactInfoService.svc" />
     <Content Include="CookieTest.html" />
     <Content Include="CssRobot.html" />
+    <Content Include="Fractals3.html" />
+    <Content Include="Fractals2.html" />
+    <Content Include="Fractals1.html" />
+    <Content Include="Fractals.html" />
     <Content Include="Home.html" />
     <Content Include="HomeV2.html" />
     <Content Include="images\fractal.jpg" />
@@ -150,6 +154,9 @@
     <Content Include="scripts\RainbowTextSlidingV2.js" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="scripts\treeanim2.js" />
+    <Content Include="scripts\treeanim1.js" />
+    <Content Include="scripts\treeanim.js" />
     <Content Include="ServiceCallExample.html" />
     <Content Include="StarField.html" />
     <Content Include="style\animation.css" />
