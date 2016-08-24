@@ -117,7 +117,7 @@ window.onload = function () {
 			angle0 = branchAngleA1;
 
     if (limit > 0) {
-      tree1(x0, y0, size0, angle0, limit - 1);
+      tree1(x0, y0, size0,angle0, limit - 1);
     }
     else {
       context1.save();

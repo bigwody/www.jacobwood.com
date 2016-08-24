@@ -39,8 +39,8 @@
     if (mode === 0) {
 
       context1.clearRect(0, 0, width1, height1);
-      branchAngleA1 = Math.cos(tA += tAS) * Math.PI / 2;
-      branchAngleB = Math.cos(tB += tBS) * Math.PI / 2;
+      branchAngleA1 = Math.tan(tA += .5*tAS) * Math.PI / 2;
+      branchAngleB = Math.tan(tB += .5*tBS) * Math.PI / 2;
 
       tree1(p0, p1, 12);
     }

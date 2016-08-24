@@ -458,26 +458,8 @@
 
 <body>
 
-  <noscript><p style="color:red">Sorry, this program requires JavaScript to run.</p></noscript>
-
-  <h2>The Mandelbrot Set<br>Using Javascript Worker Threads</h2>
-
-  <p><small>(If you really want to explore the Mandelbrot Set, try <a href="http://math.hws.edu/xJava/MB/index.html">xMandelbrot</a>.)</small></p>
-
-  <p>
-    <b>
-      To zoom in, drag on the picture with the left mouse button.<br>
-      To zoom out, hold down shift key while dragging.
-    </b>
-  </p>
-
-  <hr width=800 align=left>
-
-
-  <p id="message" style="color: #A00; font-weight: bold">&nbsp;</p>
-
   <div style="float:left;">
-    <canvas id="mbcanvas" width=600 height=480 style="background-color:rgb(230,230,255)"></canvas>
+    <canvas id="mbcanvas" width=1200 height=960 style="background-color:rgb(230,230,255)"></canvas>
   </div>
   <div style="float:left; margin-left:30px;">
     <p><button id="restoreButton">Restore Defaults</button></p>
@@ -496,6 +478,11 @@
     </p>
     <p>
       <b>Maximum Iterations:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="maxIterSelect">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>5</option>
+        <option>10</option>
         <option>25</option>
         <option>50</option>
         <option>100</option>
@@ -505,8 +492,9 @@
         <option>2500</option>
         <option>5000</option>
         <option>10000</option>
+        <option>100000</option>
         <option>Other...</option>
-      </select> <span id="otherMaxIter">&nbsp;</span>
+</select> <span id="otherMaxIter">&nbsp;</span>
     </p>
     <p><input type="checkbox" id="stretchPaletteCheckbox" checked> <label for="stretchPaletteCheckbox"><b>Stretch Palette</b></label></p>
     <p id="paletteLengthPar" style="display:none">
@@ -521,32 +509,6 @@
       </select> <span id="otherPaletteLength">&nbsp;</span>
     </p>
   </div>
-  <br clear="all">
-  <hr width=800 align=left noshade>
-  <p>
-    The Mandelbrot set is the black area.  Zoom in along the boundry<br>
-    to see incredible detail.  You need to <b>increase Maximum Iterations<br></b>
-    as you zoom in.
-  </p>
-
-  <p>
-    As you zoom in, some areas that should be colored are black,<br>
-    because the maximum number of iterations is too small.  Increasing<br>
-    the maximum iteratios might fill in some of the black area with color.
-  </p>
-
-  <p>
-    If the color looks too uniform, trying turning off the "Stretch<br>
-    Palette" option and setting the palette to be less than the maximum<br>
-    number of iterations.  If the colors change too quickly, try<br>
-    increasing the palette length.
-  </p>
-
-  <p>
-    If you zoom in too far, you will exceed the precision that is used<br>
-    for real numbers on the computer, and you'll see blocks of color instead<br>
-    of individually colored pixels.
-  </p>
 
 </body>
 </html>
