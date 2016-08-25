@@ -98,37 +98,49 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ColorChangingText.html" />
-    <Content Include="ColorChangingbackground.html" />
-    <Content Include="BootStrapTest.html" />
-    <Content Include="ColorChangingTextV2.html" />
-    <Content Include="ContactInfoService.svc" />
-    <Content Include="CookieTest.html" />
-    <Content Include="CssRobot.html" />
-    <Content Include="Fractals3.html" />
-    <Content Include="Fractals2.html" />
-    <Content Include="Fractals1.html" />
-    <Content Include="Fractals.html" />
+    <Content Include="Examples\ColorChangingText.html" />
+    <Content Include="Examples\ColorChangingbackground.html" />
+    <Content Include="Examples\ColorChangingTextV2.html" />
+    <Content Include="DAL\ContactInfoService.svc" />
+    <Content Include="Examples\CookieTest.html" />
+    <Content Include="Examples\CssRobot.html" />
+    <Content Include="Games\FlappyBird.html" />
+    <Content Include="Fractals\MandelBrot.html" />
+    <Content Include="Fractals\Fractals2.html" />
+    <Content Include="Fractals\Fractals1.html" />
+    <Content Include="Fractals\Fractals.html" />
+    <Content Include="HomeV4.html" />
     <Content Include="Home.html" />
     <Content Include="HomeV2.html" />
+    <Content Include="HomeV3.html" />
     <Content Include="images\fractal.jpg" />
     <Content Include="images\fractal_bg.jpg" />
     <Content Include="images\jacob.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\logo2.png" />
-    <Content Include="MadLibs.html" />
-    <Content Include="oldscripts\RainbowBackground.js" />
-    <Content Include="oldscripts\RainbowText.js" />
-    <Content Include="oldscripts\RainbowTextSlidingV2.js" />
+    <Content Include="lib\p5.js" />
+    <Content Include="Examples\MadLibs.html" />
+    <Content Include="Fractals\MengerSponge.html" />
+    <Content Include="Examples\SampleBlog.html" />
+    <Content Include="Examples\SampleBusinessSite.html" />
+    <Content Include="scripts\BootStrap\bootstrap.js" />
+    <Content Include="scripts\BootStrap\bootstrap.min.js" />
+    <Content Include="scripts\BootStrap\npm.js" />
+    <Content Include="scripts\oldscripts\RainbowBackground.js" />
+    <Content Include="scripts\oldscripts\RainbowText.js" />
+    <Content Include="scripts\oldscripts\RainbowTextSlidingV2.js" />
     <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataClasses1.dbml">
+    <Content Include="DAL\DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>DataClasses11.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="lib\p5.dom.js" />
+    <Content Include="lib\p5.sound.js" />
+    <Content Include="style\bootstrap-theme.css.map" />
+    <Content Include="style\bootstrap-theme.min.css.map" />
+    <Content Include="style\bootstrap.css.map" />
+    <Content Include="style\bootstrap.min.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -137,41 +149,53 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AnimationSimple.html" />
+    <Content Include="Examples\AnimationSimple.html" />
     <Content Include="images\2.jpg" />
     <Content Include="images\meonball_small.jpg" />
     <Content Include="images\wody.jpg" />
     <Content Include="Index.html" />
-    <Content Include="javascript_fun.html" />
+    <Content Include="Examples\javascript_fun.html" />
+    <Content Include="scripts\Games\bird.js" />
+    <Content Include="scripts\Games\box.js" />
+    <Content Include="scripts\Games\FlappyBirdSketch.js" />
     <Content Include="scripts\jquery-1.11.3.min.js" />
-    <Content Include="oldscripts\oldPasswordScript.js" />
+    <Content Include="scripts\oldscripts\oldPasswordScript.js" />
     <Content Include="scripts\jQueryMask.js" />
-    <Content Include="scripts\MandelbrotWorker.js" />
+    <Content Include="scripts\Fractals\MandelbrotWorker.js" />
     <Content Include="scripts\PasswordScript.js" />
+    <Content Include="scripts\Games\pipe.js" />
     <Content Include="scripts\RainbowBackground.js" />
     <Content Include="scripts\RainbowText.js" />
-    <Content Include="oldscripts\RainbowTextSliding.js" />
+    <Content Include="scripts\oldscripts\RainbowTextSliding.js" />
     <Content Include="scripts\RainbowTextSliding.js" />
     <Content Include="scripts\RainbowTextSlidingV2.js" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
-    <Content Include="scripts\treeanim2.js" />
-    <Content Include="scripts\treeanim1.js" />
-    <Content Include="scripts\treeanim.js" />
-    <Content Include="ServiceCallExample.html" />
-    <Content Include="StarField.html" />
+    <Content Include="scripts\Fractals\MengerSketch.js" />
+    <Content Include="scripts\Games\Snake.js" />
+    <Content Include="scripts\Games\SnakeSketch.js" />
+    <Content Include="scripts\Fractals\treeanim2.js" />
+    <Content Include="scripts\Fractals\treeanim1.js" />
+    <Content Include="scripts\Fractals\treeanim.js" />
+    <Content Include="Examples\ServiceCallExample.html" />
+    <Content Include="Games\Snake.html" />
+    <Content Include="Games\StarField.html" />
     <Content Include="style\animation.css" />
+    <Content Include="style\bootstrap-theme.css" />
+    <Content Include="style\bootstrap-theme.min.css" />
+    <Content Include="style\bootstrap.css" />
+    <Content Include="style\bootstrap.min.css" />
     <Content Include="style\myStyle.css" />
     <Content Include="style\MyStyleV2.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContactInfoService.svc.cs">
+    <Compile Include="DAL\ContactInfoService.svc.cs">
       <DependentUpon>ContactInfoService.svc</DependentUpon>
     </Compile>
-    <Compile Include="DataClasses1.cs" />
-    <Compile Include="DataClasses1.designer.cs" />
-    <Compile Include="DataClasses11.designer.cs">
+    <Compile Include="DAL\DataClasses1.cs" />
+    <Compile Include="DAL\DataClasses1.designer.cs" />
+    <Compile Include="DAL\DataClasses11.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
@@ -182,9 +206,12 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataClasses1.dbml.layout">
+    <None Include="DAL\DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fonts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,10 +1,8 @@
-﻿body {
-}
-
-header {
+﻿header {
   text-align: center;
   background: url("../images/fractal_bg.jpg");
   background-size: cover;
+  background-repeat: repeat-y;
   color: white;
 }
 h1{
@@ -40,4 +38,11 @@ a {
     img {
       height:150px;
     }
+    header {
+  background-size: 100%;
+}
   }
+
+.dropdown-toggle{
+  font-size: 30px;
+}

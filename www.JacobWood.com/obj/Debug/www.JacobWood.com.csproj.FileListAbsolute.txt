@@ -1,4 +1,3 @@
-C:\MyProjects\www.JacobWood.com\www.JacobWood.com\bin\ApplicationInsights.config
 C:\MyProjects\www.JacobWood.com\www.JacobWood.com\bin\roslyn\csc.exe
 C:\MyProjects\www.JacobWood.com\www.JacobWood.com\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\MyProjects\www.JacobWood.com\www.JacobWood.com\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
