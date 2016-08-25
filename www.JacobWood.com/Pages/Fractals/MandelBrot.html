@@ -4,8 +4,8 @@
 <head>
 <title>Mandelbrot Set with Web Worker Threads</title>
 
-  <script src="../scripts/jquery-1.11.3.min.js"></script>
-  <script src="../scripts/PasswordScript.js"></script>
+  <script src="../../scripts/jquery-1.11.3.min.js"></script>
+  <script src="../../scripts/PasswordScript.js"></script>
   <script type="text/javascript">
 
 
@@ -45,7 +45,7 @@
       workers = [];
       workerCount = count;
       for (i = 0; i < workerCount; i++) {
-         workers[i] = new Worker("../scripts/Fractals/MandelbrotWorker.js");
+        workers[i] = new Worker("../../scripts/Fractals/MandelbrotWorker.js");
          workers[i].onmessage = jobFinished;
       }
    }

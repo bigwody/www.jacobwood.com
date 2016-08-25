@@ -24,11 +24,11 @@ function checkIt() {
       var name = "passwordCookie";
       var value = "1"
       document.cookie = name + "=" + value;
-      window.location.href = 'home.html';
+      window.location.href = 'Pages/Home/home.html';
       break;
     }
     p += 1;
-    
+
     alert('Access Denied - Password Incorrect, Please Try Again.');
   }
   if (t.toLowerCase() != "password" & p == 3)
@@ -38,16 +38,17 @@ function checkIt() {
 
 function createCookie() {
   var name = "passwordCookie";
-  var value = "1"
-  
-  document.cookie = name + "=" + value;
+  var value = "1";
+  var ca = document.cookie;
+  if (!ca.includes("passwordCookie"))
+    document.cookie = name + "=" + value;
 }
 
 function readCookie(name) {
   var nameEQ = "passwordCookie" + "=";
-  var ca = document.cookie;  
-  if (!ca.includes("passwordCookie=1"))
-    window.location.href = 'index.html';
+  var ca = document.cookie;
+  if (!ca.includes("passwordCookie=1") && !window.location.href.toUpperCase().includes("INDEX.HTML"))
+    window.location.href = "../../index.html";
 }
 
 function destroyCookie() {

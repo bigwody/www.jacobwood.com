@@ -98,31 +98,34 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Examples\ColorChangingText.html" />
-    <Content Include="Examples\ColorChangingbackground.html" />
-    <Content Include="Examples\ColorChangingTextV2.html" />
+    <Content Include="Pages\Animations\NoiseTerrain.html" />
+    <Content Include="Pages\Examples\ColorChangingText.html" />
+    <Content Include="Pages\Examples\ColorChangingbackground.html" />
+    <Content Include="Pages\Examples\ColorChangingTextV2.html" />
     <Content Include="DAL\ContactInfoService.svc" />
-    <Content Include="Examples\CookieTest.html" />
-    <Content Include="Examples\CssRobot.html" />
-    <Content Include="Games\FlappyBird.html" />
-    <Content Include="Fractals\MandelBrot.html" />
-    <Content Include="Fractals\Fractals2.html" />
-    <Content Include="Fractals\Fractals1.html" />
-    <Content Include="Fractals\Fractals.html" />
-    <Content Include="HomeV4.html" />
-    <Content Include="Home.html" />
-    <Content Include="HomeV2.html" />
-    <Content Include="HomeV3.html" />
+    <Content Include="Pages\Examples\CookieTest.html" />
+    <Content Include="Index.html" />
+    <Content Include="Pages\Other\CssRobot.html" />
+    <Content Include="Pages\Games\FlappyBird.html" />
+    <Content Include="Pages\Fractals\MandelBrot.html" />
+    <Content Include="Pages\Fractals\Fractals2.html" />
+    <Content Include="Pages\Fractals\Fractals1.html" />
+    <Content Include="Pages\Fractals\Fractals.html" />
+    <Content Include="Pages\Home\Home.html" />
+    <Content Include="Pages\Home\HomeV1.html" />
+    <Content Include="Pages\Home\HomeV2.html" />
+    <Content Include="Pages\Home\HomeV3.html" />
     <Content Include="images\fractal.jpg" />
     <Content Include="images\fractal_bg.jpg" />
     <Content Include="images\jacob.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\logo2.png" />
     <Content Include="lib\p5.js" />
-    <Content Include="Examples\MadLibs.html" />
-    <Content Include="Fractals\MengerSponge.html" />
-    <Content Include="Examples\SampleBlog.html" />
-    <Content Include="Examples\SampleBusinessSite.html" />
+    <Content Include="Pages\Other\MadLibs.html" />
+    <Content Include="Pages\Fractals\MengerSponge.html" />
+    <Content Include="Pages\Other\SampleBlog.html" />
+    <Content Include="Pages\Other\SampleBusinessSite.html" />
+    <Content Include="scripts\Animations\noiseTerrainSketch.js" />
     <Content Include="scripts\BootStrap\bootstrap.js" />
     <Content Include="scripts\BootStrap\bootstrap.min.js" />
     <Content Include="scripts\BootStrap\npm.js" />
@@ -149,14 +152,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Examples\AnimationSimple.html" />
+    <Content Include="Pages\Animations\AnimationSimple.html" />
     <Content Include="images\2.jpg" />
     <Content Include="images\meonball_small.jpg" />
     <Content Include="images\wody.jpg" />
-    <Content Include="Index.html" />
-    <Content Include="Examples\javascript_fun.html" />
+    <Content Include="Pages\Examples\javascript_fun.html" />
     <Content Include="scripts\Games\bird.js" />
-    <Content Include="scripts\Games\box.js" />
+    <Content Include="scripts\Fractals\box.js" />
     <Content Include="scripts\Games\FlappyBirdSketch.js" />
     <Content Include="scripts\jquery-1.11.3.min.js" />
     <Content Include="scripts\oldscripts\oldPasswordScript.js" />
@@ -177,9 +179,9 @@
     <Content Include="scripts\Fractals\treeanim2.js" />
     <Content Include="scripts\Fractals\treeanim1.js" />
     <Content Include="scripts\Fractals\treeanim.js" />
-    <Content Include="Examples\ServiceCallExample.html" />
-    <Content Include="Games\Snake.html" />
-    <Content Include="Games\StarField.html" />
+    <Content Include="Pages\Examples\ServiceCallExample.html" />
+    <Content Include="Pages\Games\Snake.html" />
+    <Content Include="Pages\Games\StarField.html" />
     <Content Include="style\animation.css" />
     <Content Include="style\bootstrap-theme.css" />
     <Content Include="style\bootstrap-theme.min.css" />
