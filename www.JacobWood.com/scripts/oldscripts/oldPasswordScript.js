@@ -1,10 +1,10 @@
-﻿$(document).ready(function () {
+﻿document.ready = function () {
   readCookie();
-});
+};
+
+var p = 0;
 
 function checkIt() {
-
-  var p = 1;
   var t = $('.password').val();
   var e = "rd";
   var a = "pa";
@@ -15,44 +15,64 @@ function checkIt() {
   var b = "wo";
   var f = "23";
   c = cb;
-  while (p < 3) {
-    if (!t)
-      history.go(-1);
-    var bb = a + c + b;
-    var aa = e + d + f;
-    if (t.toLowerCase() == bb + aa) {
-      var name = "passwordCookie";
-      var value = "1"
-      document.cookie = name + "=" + value;
-      window.location.href = 'Pages/Home/home.html';
-      break;
-    }
-    p += 1;
 
+  var bb = a + c + b;
+  var aa = e + d + f;
+  if (t.toLowerCase() == (bb + aa)) {
+    createCookie("loggedIn", 1, 1);
+    window.location.href = 'Pages/Home/home.html';
+  } else {
+    p += 1;
     alert('Access Denied - Password Incorrect, Please Try Again.');
+    if (p == 3)
+      window.location.href = 'http://www.google.com';
   }
-  if (t.toLowerCase() != "password" & p == 3)
-    window.location.href = 'http://www.google.com';
-  return " ";
 }
 
 function createCookie() {
-  var name = "passwordCookie";
-  var value = "1";
-  var ca = document.cookie;
-  if (!ca.includes("passwordCookie"))
-    document.cookie = name + "=" + value;
+  createCookie1("loggedIn", 1, 1);
 }
 
 function readCookie(name) {
-  var nameEQ = "passwordCookie" + "=";
-  var ca = document.cookie;
-  if (!ca.includes("passwordCookie=1") && !window.location.href.toUpperCase().includes("INDEX.HTML"))
+  //alert(getCookie("loggedIn"));
+  //alert(document.cookie);
+  //if (getCookie("loggedIn") != 1)
+  //  alert("cookie not equal to 1");
+  //if (!window.location.href.toUpperCase().includes("INDEX.HTML"))
+  //  alert("cookie location doesn't include index.html");
+
+  if (getCookie("loggedIn") != 1 && !window.location.href.toUpperCase().includes("INDEX.HTML"))
     window.location.href = "../../index.html";
 }
 
 function destroyCookie() {
-  var name = "passwordCookie";
-  var value = "0"
-  document.cookie = name + "=" + value;
+  createCookie1("loggedIn", 0, 1);
+}
+
+function createCookie1(name, value, days) {
+  var expires;
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toGMTString();
+  }
+  else {
+    expires = "";
+  }
+  document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function getCookie(c_name) {
+  if (document.cookie.length > 0) {
+    c_start = document.cookie.indexOf(c_name + "=");
+    if (c_start != -1) {
+      c_start = c_start + c_name.length + 1;
+      c_end = document.cookie.indexOf(";", c_start);
+      if (c_end == -1) {
+        c_end = document.cookie.length;
+      }
+      return unescape(document.cookie.substring(c_start, c_end));
+    }
+  }
+  return "";
 }
