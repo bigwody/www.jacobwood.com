@@ -1,1 +1,74 @@
-﻿var _0xdd84 = ["\x72\x65\x61\x64\x79", "\x76\x61\x6C", "\x2E\x70\x61\x73\x73\x77\x6F\x72\x64", "\x72\x64", "\x70\x61", "\x73\x73", "\x61\x61", "\x31\x35", "\x31\x32", "\x77\x6F", "\x32\x33", "\x74\x6F\x4C\x6F\x77\x65\x72\x43\x61\x73\x65", "\x6C\x6F\x67\x67\x65\x64\x49\x6E", "\x68\x72\x65\x66", "\x6C\x6F\x63\x61\x74\x69\x6F\x6E", "\x50\x61\x67\x65\x73\x2F\x48\x6F\x6D\x65\x2F\x68\x6F\x6D\x65\x2E\x68\x74\x6D\x6C", "\x41\x63\x63\x65\x73\x73\x20\x44\x65\x6E\x69\x65\x64\x20\x2D\x20\x50\x61\x73\x73\x77\x6F\x72\x64\x20\x49\x6E\x63\x6F\x72\x72\x65\x63\x74\x2C\x20\x50\x6C\x65\x61\x73\x65\x20\x54\x72\x79\x20\x41\x67\x61\x69\x6E\x2E", "\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x6F\x6F\x67\x6C\x65\x2E\x63\x6F\x6D", "\x49\x4E\x44\x45\x58\x2E\x48\x54\x4D\x4C", "\x69\x6E\x63\x6C\x75\x64\x65\x73", "\x74\x6F\x55\x70\x70\x65\x72\x43\x61\x73\x65", "\x2E\x2E\x2F\x2E\x2E\x2F\x69\x6E\x64\x65\x78\x2E\x68\x74\x6D\x6C", "\x67\x65\x74\x54\x69\x6D\x65", "\x73\x65\x74\x54\x69\x6D\x65", "\x3B\x20\x65\x78\x70\x69\x72\x65\x73\x3D", "\x74\x6F\x47\x4D\x54\x53\x74\x72\x69\x6E\x67", "", "\x63\x6F\x6F\x6B\x69\x65", "\x3D", "\x3B\x20\x70\x61\x74\x68\x3D\x2F", "\x6C\x65\x6E\x67\x74\x68", "\x69\x6E\x64\x65\x78\x4F\x66", "\x3B", "\x73\x75\x62\x73\x74\x72\x69\x6E\x67"]; document[_0xdd84[0]] = function () { readCookie() }; var p = 0; function checkIt() { var _0x7f95x3 = $(_0xdd84[2])[_0xdd84[1]](); var _0x7f95x4 = _0xdd84[3]; var _0x7f95x5 = _0xdd84[4]; var _0x7f95x6 = _0xdd84[5]; var _0x7f95x7 = _0xdd84[6]; var _0x7f95x8 = _0xdd84[7]; var _0x7f95x9 = _0xdd84[8]; var _0x7f95xa = _0xdd84[9]; var _0x7f95xb = _0xdd84[10]; _0x7f95x7 = _0x7f95x6; var _0x7f95xc = _0x7f95x5 + _0x7f95x7 + _0x7f95xa; var _0x7f95xd = _0x7f95x4 + _0x7f95x8 + _0x7f95xb; if (_0x7f95x3[_0xdd84[11]]() == (_0x7f95xc + _0x7f95xd)) { createCookie(_0xdd84[12], 1, 1); window[_0xdd84[14]][_0xdd84[13]] = _0xdd84[15] } else { p += 1; alert(_0xdd84[16]); if (p == 3) { window[_0xdd84[14]][_0xdd84[13]] = _0xdd84[17] } } } function createCookie() { createCookie1(_0xdd84[12], 1, 1) } function readCookie(_0x7f95x10) { if (getCookie(_0xdd84[12]) != 1 && !window[_0xdd84[14]][_0xdd84[13]][_0xdd84[20]]()[_0xdd84[19]](_0xdd84[18])) { window[_0xdd84[14]][_0xdd84[13]] = _0xdd84[21] } } function destroyCookie() { createCookie1(_0xdd84[12], 0, 1) } function createCookie1(_0x7f95x10, _0x7f95x13, _0x7f95x14) { var _0x7f95x15; if (_0x7f95x14) { var _0x7f95x16 = new Date(); _0x7f95x16[_0xdd84[23]](_0x7f95x16[_0xdd84[22]]() + (_0x7f95x14 * 24 * 60 * 60 * 1000)); _0x7f95x15 = _0xdd84[24] + _0x7f95x16[_0xdd84[25]]() } else { _0x7f95x15 = _0xdd84[26] }; document[_0xdd84[27]] = _0x7f95x10 + _0xdd84[28] + _0x7f95x13 + _0x7f95x15 + _0xdd84[29] } function getCookie(_0x7f95x18) { if (document[_0xdd84[27]][_0xdd84[30]] > 0) { c_start = document[_0xdd84[27]][_0xdd84[31]](_0x7f95x18 + _0xdd84[28]); if (c_start != -1) { c_start = c_start + _0x7f95x18[_0xdd84[30]] + 1; c_end = document[_0xdd84[27]][_0xdd84[31]](_0xdd84[32], c_start); if (c_end == -1) { c_end = document[_0xdd84[27]][_0xdd84[30]] }; return unescape(document[_0xdd84[27]][_0xdd84[33]](c_start, c_end)) } }; return _0xdd84[26] }
+﻿window.onpaint = readCookie();
+var p = 0;
+
+function checkIt() {
+  var t = $('.password').val();
+  var e = "rd";
+  var a = "pa";
+  var cb = "ss";
+  var c = "aa";
+  var d = "15";
+  var dc = "12";
+  var b = "wo";
+  var f = "23";
+  c = cb;
+
+  var bb = a + c + b;
+  var aa = e + d + f;
+  if (t.toLowerCase() == (bb + aa)) {
+    createCookie("loggedIn", 1, 1);
+    window.location.href = 'Pages/Home/home.html';
+  } else {
+    p += 1;
+    alert('Access Denied - Password Incorrect, Please Try Again.');
+    if (p == 3)
+      window.location.href = 'http://www.google.com';
+  }
+}
+
+function createCookie() {
+  createCookie1("loggedIn", 1, 1);
+}
+
+function readCookie(name) {
+  //alert(getCookie("loggedIn"));
+  //alert(document.cookie);
+  //if (getCookie("loggedIn") != 1)
+  //  alert("cookie not equal to 1");
+  //if (!window.location.href.toUpperCase().includes("INDEX.HTML"))
+  //  alert("cookie location doesn't include index.html");
+  if (getCookie("loggedIn") != 1 && !window.location.href.toUpperCase().includes("INDEX.HTML"))
+    window.location.href = "../../index.html";
+}
+
+function destroyCookie() {
+  createCookie1("loggedIn", 0, 1);
+}
+
+function createCookie1(name, value, days) {
+  var expires;
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toGMTString();
+  }
+  else {
+    expires = "";
+  }
+  document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function getCookie(c_name) {
+  if (document.cookie.length > 0) {
+    c_start = document.cookie.indexOf(c_name + "=");
+    if (c_start != -1) {
+      c_start = c_start + c_name.length + 1;
+      c_end = document.cookie.indexOf(";", c_start);
+      if (c_end == -1) {
+        c_end = document.cookie.length;
+      }
+      return unescape(document.cookie.substring(c_start, c_end));
+    }
+  }
+  return "";
+}

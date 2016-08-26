@@ -98,12 +98,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\Templates\header.html" />
+    <Content Include="Pages\Templates\footer.html" />
+    <Content Include="Pages\Animations\DLA.html" />
     <Content Include="Pages\Animations\MazeRunner.html" />
     <Content Include="Pages\Animations\Mitosis.html" />
     <Content Include="Pages\Animations\NoiseTerrain.html" />
     <Content Include="Pages\Animations\PerlinNoiseFlow.html" />
+    <Content Include="Pages\Animations\Phyllotaxis.html" />
     <Content Include="Pages\Animations\PurpleRain.html" />
     <Content Include="Pages\Animations\ReactionDiffusion.html" />
+    <Content Include="Pages\Animations\SmartRockets.html" />
     <Content Include="Pages\Animations\SuperShape2D.html" />
     <Content Include="Pages\Examples\ColorChangingText.html" />
     <Content Include="Pages\Examples\ColorChangingbackground.html" />
@@ -114,18 +119,35 @@
     <Content Include="Pages\Fractals\FractalsTreeLSystem.html" />
     <Content Include="Pages\Fractals\MandelBrot2.html" />
     <Content Include="Pages\Fractals\SpaceColonizer.html" />
+    <Content Include="Pages\Games\Agario.html" />
+    <Content Include="Pages\Templates\Test.html" />
     <Content Include="scripts\Animations\cell.js" />
+    <Content Include="Pages\Animations\Fireworks.html" />
+    <Content Include="scripts\Animations\dlaSketch.js" />
+    <Content Include="scripts\Animations\dna.js" />
+    <Content Include="scripts\Animations\firework.js" />
+    <Content Include="scripts\Animations\fireworkParticle.js" />
+    <Content Include="scripts\Animations\fireworksSketch.js" />
     <Content Include="scripts\Animations\mazeCell.js" />
     <Content Include="scripts\Animations\mazeRunnerSketch.js" />
     <Content Include="scripts\Animations\mitosisSketch.js" />
+    <Content Include="scripts\Animations\phyllotaxisSketch.js" />
+    <Content Include="Pages\Animations\PoissonDisc.html" />
+    <Content Include="scripts\Animations\poissonDisk.js" />
+    <Content Include="scripts\Animations\population.js" />
     <Content Include="scripts\Animations\reactionDiffusionSketch.js" />
+    <Content Include="scripts\Animations\rocket.js" />
+    <Content Include="scripts\Animations\smartRocketsSketch.js" />
     <Content Include="scripts\Animations\superShape2DSketch.js" />
+    <Content Include="scripts\Animations\walker.js" />
     <Content Include="scripts\Fractals\branch.js" />
     <Content Include="scripts\Fractals\leaf.js" />
     <Content Include="scripts\Fractals\lSystemSketch.js" />
     <Content Include="scripts\Fractals\mandelbrotSketch.js" />
     <Content Include="scripts\Fractals\spaceColonizerSketch.js" />
     <Content Include="scripts\Fractals\tree.js" />
+    <Content Include="scripts\Games\agarioSketch.js" />
+    <Content Include="scripts\Games\blob.js" />
     <Content Include="scripts\Games\drop.js" />
     <Content Include="scripts\Games\flower.js" />
     <Content Include="scripts\Games\ship.js" />
@@ -159,6 +181,7 @@
     <Content Include="scripts\BootStrap\bootstrap.js" />
     <Content Include="scripts\BootStrap\bootstrap.min.js" />
     <Content Include="scripts\BootStrap\npm.js" />
+    <Content Include="scripts\Main.js" />
     <Content Include="scripts\oldscripts\RainbowBackground.js" />
     <Content Include="scripts\oldscripts\RainbowText.js" />
     <Content Include="scripts\oldscripts\RainbowTextSlidingV2.js" />
@@ -170,6 +193,7 @@
     </Content>
     <Content Include="lib\p5.dom.js" />
     <Content Include="lib\p5.sound.js" />
+    <Content Include="scripts\processing.js" />
     <Content Include="style\bootstrap-theme.css.map" />
     <Content Include="style\bootstrap-theme.min.css.map" />
     <Content Include="style\bootstrap.css.map" />

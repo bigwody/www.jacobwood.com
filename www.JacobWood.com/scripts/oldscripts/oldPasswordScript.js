@@ -1,7 +1,4 @@
-﻿document.ready = function () {
-  readCookie();
-};
-
+﻿window.onpaint = readCookie();
 var p = 0;
 
 function checkIt() {
@@ -40,7 +37,6 @@ function readCookie(name) {
   //  alert("cookie not equal to 1");
   //if (!window.location.href.toUpperCase().includes("INDEX.HTML"))
   //  alert("cookie location doesn't include index.html");
-
   if (getCookie("loggedIn") != 1 && !window.location.href.toUpperCase().includes("INDEX.HTML"))
     window.location.href = "../../index.html";
 }
